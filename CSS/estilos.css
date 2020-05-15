@@ -1,11 +1,33 @@
+/* reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
 body {
-    background-image: url('https://www.significadofacil.com/wp-content/uploads/2019/07/background.jpg'); 
-    background-size: auto 100vh;
+    background-attachment: fixed;
+    background-image: url('https://ravenandrhyme.files.wordpress.com/2017/10/annie-spratt-40193.jpg'); 
+    background-repeat: round;
     font-family: Arial;
     height: 100vh;
   }
+  /* se a tela tiver pelo menos 400px vai carregar esses estilos */
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  header {
+    display: flex;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+  }
   .menu {
-    background-color: darkred;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   .menu ul {
     display: flex;
@@ -14,8 +36,13 @@ body {
   .menu li{
     list-style: none;
   }
+  .menu a {
+    display: block; 
+    padding: 10x 10x;
+    box-shadow: rgb(56, 56, 56) 0px 2px 7px;
+  }
   a {
-    color: teal;
+    color: white;
     text-decoration: none;
   }
   a:hover {
@@ -28,3 +55,7 @@ body {
   .site-subtitle {
     font-style: italic;
   } 
+  .img-portfolio {
+    height: 180px;
+    width: 300px;
+  }
