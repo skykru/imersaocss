@@ -6,9 +6,9 @@
 }
 body {
     background-attachment: fixed;
-    background-image: url('https://ravenandrhyme.files.wordpress.com/2017/10/annie-spratt-40193.jpg'); 
+    background-image: url('https://i.pinimg.com/originals/4d/a5/3d/4da53d8fcc52f78a6dcdb964f4683149.jpg'); 
     background-repeat: round;
-    font-family: Arial;
+    font-family: 'Inconsolata', monospace;
     height: 100vh;
   }
   /* se a tela tiver pelo menos 400px vai carregar esses estilos */
@@ -19,7 +19,7 @@ body {
   }
   header {
     display: flex;
-    height: 35vh;
+    height: 50vh;
     justify-content: center;
     align-items: center;
   }
@@ -52,10 +52,79 @@ body {
     color: snow;
     text-align: center;
   }
+  .site-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 30px;
+  }
   .site-subtitle {
+    font-family: 'Forum', cursive;
     font-style: italic;
   } 
+  .portfolio {
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.87);
+  }
+  .portfolio h2 {
+    color: white;
+    font-family: 'Forum', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 2em;
+  }
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+  @media (min-width: 560px) {
+    .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+@media (min-width: 880px) {
+  .portfolio .grid {
+    align-content: center;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
+}
+}
+  .portfolio figure {
+    text-align: center;
+  }
   .img-portfolio {
     height: 180px;
-    width: 300px;
+    width: 240px;
+    object-fit: cover;
+  }
+  .outrosprojetos {
+    color: rgba(255, 255, 255, 0.87);
+    padding: 1em;
+  }
+  .outrosprojetos h2 {
+    color: white;
+    font-family: 'Forum', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 1.2em;
+  }
+  .outrosprojetos .grid {
+    display: grid;
+    gap: 2em;
+  }
+@media (min-width: 560px) {
+    .outrosprojetos .grid {
+    grid-template-columns: repeat (2, 240px);
+  }
+}
+@media (min-width: 880px) {
+  .outrosprojetos .grid {
+  align-content: center;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
+}
+}
+  .outrosprojetos figure {
+    text-align: center;
+  }
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
   }
